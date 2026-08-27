@@ -293,7 +293,6 @@
         <div class="legend-color bio1314-assessment"></div>
         <span>BIO1314 Assessments</span>
       </div>
-    </div>
 
     <div class="calendar" id="calendar"></div>
 
@@ -550,9 +549,6 @@ if (hasRange) {
         //dayNumber.className = 'day-number';
         //dayNumber.textContent = day;
         //dayElement.appendChild(dayNumber);
-
-        // format current date string
-        const currentDateString = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
 
         // find sessions for this date that apply to the selected group
        const daySessions = sessionData.filter(session => {
