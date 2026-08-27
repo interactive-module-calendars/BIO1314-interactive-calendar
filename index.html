@@ -216,9 +216,9 @@
     .legend-color { width:24px; height:16px; border-radius:4px; border:1px solid rgba(0,0,0,0.05); }
 
     /* legend colors matching classes above */
-    .legend-color.bio1314-lecture        { background:#B22D6E; }
-    .legend-color.bio1314-lab            { background:#3C368E; }
-    .legend-color.bio1314-assessment     { background:#0064B1;  }
+    .legend-color.bio1314-lecture        { background:#4facfe; }
+    .legend-color.bio1314-lab            { background:#fa709a; }
+    .legend-color.bio1314-assessment     { background:red;     }
 
     .no-sessions { text-align:center; padding:40px; color:#6c757d; font-style:italic; }
 
@@ -481,7 +481,7 @@ if (hasRange) {
       const monthYear = document.getElementById('monthYear');
       const noSessions = document.getElementById('noSessions');
 
-      if (!selectedGroup || !selectedPathway) {
+      if (!selectedGroup && !selectedPathway) {
   calendar.style.display = 'none';
   noSessions.style.display = 'block';
   monthYear.textContent = `${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`;
