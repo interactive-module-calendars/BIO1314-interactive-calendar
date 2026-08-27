@@ -172,9 +172,9 @@
 
     /* Format + Module-based classes - used by JS: e.g. "lecture bio1103" */
     /* BIO1314 (placeholder/green lectures) */
-    .lecture.bio1314 { background-color: #4facfe; color: white} /* green placeholder */
-    .lab.bio1314     { background-color: #fa709a; color: white }
-    .assessment.bio1314 { background-color: #red; color: white;
+    .lecture.bio1314 { background-color: #4facfe; color: #111}
+    .lab.bio1314     { background-color: #fa709a; color: #111}
+    .assessment.bio1314 { background-color: red;  color: #111;
     }
 
     @keyframes pulse {
@@ -280,7 +280,8 @@
       <button class="nav-btn" onclick="nextMonth()">Next &#8594;</button>
     </div>
 
-    <!-- LEGEND: only lectures & labs (class tests & feedback removed from legend) -->
+    <!-- LEGEND -->
+    <div class="legend">
       <div class="legend-item">
         <div class="legend-color bio1314-lecture"></div>
         <span>BIO1314 Lectures</span>
@@ -292,6 +293,7 @@
       <div class="legend-item">
         <div class="legend-color bio1314-assessment"></div>
         <span>BIO1314 Assessments</span>
+      </div>
       </div>
 
     <div class="calendar" id="calendar"></div>
@@ -350,7 +352,7 @@
       
       // Week 6 - READING WEEK
       {week: 6, date: '2026-10-28', time: '10:00 - 11:00', location: 'Online', day: 'W', lecture: 'CLASS TEST 1', staff: 'NA', format: 'Assessment', group: 'All', module: 'BIO1314'},
-      {week: 6, date: '2026-10-30', time: '12:00 noon', location: 'NA', day: 'F', lecture: 'ESSAY SUBMISSION', staff: 'HF', format: 'Assessment', group: 'All', module: 'BIO1314'},
+      {week: 6, date: '2026-10-30', time: '12:00', location: 'NA', day: 'F', lecture: 'ESSAY SUBMISSION', staff: 'HF', format: 'Assessment', group: 'All', module: 'BIO1314'},
       
        //week 7
       {week: 7, date: '2026-11-02', time: '10:00 - 11:00', location: 'Elmwood Hall', day: 'M', lecture: 'Bacterial Genetics 1: DNA replication and expression', staff: 'JM', format: 'Lecture', group: 'All', module: 'BIO1314'},
