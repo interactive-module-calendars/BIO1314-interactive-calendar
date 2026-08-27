@@ -172,9 +172,9 @@
 
     /* Format + Module-based classes - used by JS: e.g. "lecture bio1103" */
     /* BIO1314 (placeholder/green lectures) */
-    .lecture.bio1314 { background-color: #B22D6E; color: white} /* green placeholder */
-    .lab.bio1314     { background-color: #3C368E; color: white }
-    .assessment.bio1314 { background-color: #0064B1; color: white;
+    .lecture.bio1314 { background-color: #4facfe; color: white} /* green placeholder */
+    .lab.bio1314     { background-color: #fa709a; color: white }
+    .assessment.bio1314 { background-color: #red; color: white;
     }
 
     @keyframes pulse {
@@ -208,7 +208,7 @@
     .staff-badge { display:inline-block; background:#007bff; color:white; padding:4px 10px; border-radius:12px; font-weight:600; }
     .module-badge { display:inline-block; padding:4px 10px; border-radius:12px; font-weight:600; color:white; }
 
-    .module-bio1314 { background: #EC271B; }  /* blue */
+    .module-bio1314 { background: #4facfe; }  /* blue */
 
     /* Legend (only lectures & labs per your request) */
     .legend { display:flex; justify-content:center; gap:18px; padding:18px; background:#f8f9fa; flex-wrap:wrap; border-top:1px solid #eee; }
@@ -480,7 +480,7 @@ if (hasRange) {
       const monthYear = document.getElementById('monthYear');
       const noSessions = document.getElementById('noSessions');
 
-      if (!selectedGroup && !selectedPathway) {
+      if (!selectedGroup | !selectedPathway) {
   calendar.style.display = 'none';
   noSessions.style.display = 'block';
   monthYear.textContent = `${monthNames[currentDate.getMonth()]} ${currentDate.getFullYear()}`;
